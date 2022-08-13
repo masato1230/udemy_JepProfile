@@ -52,6 +52,15 @@ class MainActivity : ComponentActivity() {
                         Spacer(modifier = Modifier.height(20.dp))
                         // 職業
                         Text(text = "職業: Androidアプリ開発者", color = Color.Gray)
+                        Spacer(modifier = Modifier.height(20.dp))
+
+                        Column(modifier = Modifier.fillMaxWidth()) {
+                            // 会社名
+                            Text(text = "Goooogle", fontSize = 26.sp, fontWeight = FontWeight.Bold)
+                            Spacer(modifier = Modifier.height(10.dp))
+                            // 部署 グループ名
+                            Text(text = "DXカンパニー テクノロジーグループ", fontSize = 16.sp, color = Color.Gray)
+                        }
                     }
                 }
             }
