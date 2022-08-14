@@ -62,6 +62,7 @@ class MainActivity : ComponentActivity() {
                             Text(text = "DXカンパニー テクノロジーグループ", fontSize = 16.sp, color = Color.Gray)
                             Spacer(modifier = Modifier.height(20.dp))
 
+                            // Email
                             Row(verticalAlignment = Alignment.CenterVertically) {
                                 Icon(imageVector = Icons.Default.Email, contentDescription = null)
                                 Spacer(modifier = Modifier.width(10.dp))
@@ -71,7 +72,20 @@ class MainActivity : ComponentActivity() {
                             Text(text = "example@ezweb.ne.jp", fontSize = 16.sp)
                             Spacer(modifier = Modifier.height(5.dp))
 
-                            Divider(modifier = Modifier.clip(RoundedCornerShape(1000.dp)), thickness = 2.dp)
+                            Divider(
+                                modifier = Modifier.clip(RoundedCornerShape(1000.dp)),
+                                thickness = 2.dp
+                            )
+                        }
+                        Spacer(modifier = Modifier.height(20.dp))
+
+                        // 詳細を表示
+                        Button(
+                            modifier = Modifier.fillMaxWidth(),
+                            colors = ButtonDefaults.buttonColors(backgroundColor = Color(0xfff85f6a)),
+                            onClick = { /*TODO*/ },
+                        ) {
+                            Text(text = "詳細を表示", color = Color.White)
                         }
                     }
                 }
